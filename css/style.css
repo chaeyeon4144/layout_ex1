@@ -1,1 +1,129 @@
 @charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+  
+  
+}
+/* 전체 레이아웃 */
+.container {
+  width: 1200px;
+  height: 1000px;
+  background-color: antiquewhite;
+  margin: auto;
+}
+/* 상단 */
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #045;
+}
+/* 로고 */
+.logo {
+  width: 300px;
+
+  background-color: rgb(178, 212, 212);
+  float: left;
+}
+.logo h1 {
+  font-size: 40px;
+  color: #fff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 100px;
+  text-align: center;
+}
+nav {
+  position: relative;
+  width: 900px;
+  height: 100%;
+  float: right;
+  background-color: rgb(194, 194, 216);
+}
+/* 메뉴 */
+#topMenu {
+  width: calc(100% - 100px);
+  position: absolute;
+  top: 0;
+  right: 50px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: cadetblue;
+  margin-top: 40px;
+}
+#topMenu li {
+  width: calc(100% / 4);
+  height: 100%;
+  float: left;
+
+  background-color: cornflowerblue;
+}
+#topMenu li:hover{
+    background-color: dodgerblue;
+}
+#topMenu li:hover a{
+    color: #fff;
+}
+
+/* 치유섬 */
+.contents{
+    background-color: aqua;
+    width: 100%px;
+    height: 800px;
+    background-color: chocolate;
+}
+/* healing */
+.healing{
+    width: 100%;
+    height: calc(100% / 2);
+    background-color: coral;
+}
+.healing h2{
+    background-color: rgb(151, 86, 124);
+}
+
+
+/* activity */
+.activity{
+    height: calc(100% / 2);
+    background-color: cornflowerblue;
+}
+/* 설명 */
+.decription{
+    width: 100%;
+    background-color: darksalmon;
+    height: 300px;
+}
+.dec-img{
+    float: left;
+    width: 450px;
+    height: 100%;
+    background-color: crimson;
+}
+.dec-detail{
+    float: left;
+    width: calc(100% - 450px);
+    height: 100%;
+    background-color: darkseagreen;
+}
+/* 자세한 설명 */
+.detail-top{
+    height: calc(100% / 2);
+    background-color: rgb(53, 47, 35);
+
+}
+.detail-bottom{
+    height: calc(100% / 2);
+    background-color: cornflowerblue;
+
+}
