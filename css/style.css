@@ -11,14 +11,12 @@ li {
 a {
   color: #333;
   text-decoration: none;
-  
-  
 }
 /* 전체 레이아웃 */
 .container {
   width: 1200px;
   height: 1000px;
-  background-color: antiquewhite;
+  background-color: rgb(90, 142, 138);
   margin: auto;
 }
 /* 상단 */
@@ -46,7 +44,7 @@ nav {
   width: 900px;
   height: 100%;
   float: right;
-  background-color: rgb(194, 194, 216);
+  background-color: rgb(83, 83, 205);
 }
 /* 메뉴 */
 #topMenu {
@@ -58,7 +56,7 @@ nav {
   line-height: 60px;
   font-size: 20px;
   font-weight: bold;
-  background-color: cadetblue;
+  background-color: rgb(55, 108, 109);
   margin-top: 40px;
 }
 #topMenu li {
@@ -68,62 +66,115 @@ nav {
 
   background-color: cornflowerblue;
 }
-#topMenu li:hover{
-    background-color: dodgerblue;
+#topMenu li:hover {
+  background-color: dodgerblue;
 }
-#topMenu li:hover a{
-    color: #fff;
+#topMenu li:hover a {
+  color: #fff;
 }
 
 /* 치유섬 */
-.contents{
-    background-color: aqua;
-    width: 100%px;
-    height: 800px;
-    background-color: chocolate;
+.contents {
+  background-color: aqua;
+  width: 100%px;
+  height: 800px;
+  background-color: chocolate;
+  padding: 40px 80px;
 }
 /* healing */
-.healing{
-    width: 100%;
-    height: calc(100% / 2);
-    background-color: coral;
+.healing {
+  width: 100%;
+  height: calc(100% / 2);
+  background-color: coral;
 }
-.healing h2{
-    background-color: rgb(151, 86, 124);
+.healing h2 {
+  background-color: rgb(151, 86, 124);
+  padding: 10px;
 }
-
 
 /* activity */
-.activity{
-    height: calc(100% / 2);
-    background-color: cornflowerblue;
+.activity {
+  height: calc(100% / 2);
+  background-color: cornflowerblue;
 }
 /* 설명 */
-.decription{
-    width: 100%;
-    background-color: darksalmon;
-    height: 300px;
+.decription {
+  width: 100%;
+  background-color: darksalmon;
+  height: 300px;
+  padding: 20px 0;
 }
-.dec-img{
-    float: left;
-    width: 450px;
-    height: 100%;
-    background-color: crimson;
+.dec-img {
+  float: left;
+  width: 450px;
+  height: 100%;
+  background-color: crimson;
+  border-radius: 20px;
+  overflow: hidden;
 }
-.dec-detail{
-    float: left;
-    width: calc(100% - 450px);
-    height: 100%;
-    background-color: darkseagreen;
+.dec-img img {
+  width: 103%;
+  transition: all 1.5s;
+  cursor: pointer;
 }
+.dec-detail img:hover {
+  width: 110%;
+  filter: blur(1.5);
+}
+.dec-detail {
+  float: left;
+  width: calc(100% - 450px);
+  height: 100%;
+  padding-left: 30px;
+  background-color: darkseagreen;
+}
+
 /* 자세한 설명 */
-.detail-top{
-    height: calc(100% / 2);
-    background-color: rgb(53, 47, 35);
-
+.detail-top {
+  height: calc(100% / 2);
+  background-color: rgb(214, 200, 170);
 }
-.detail-bottom{
-    height: calc(100% / 2);
-    background-color: cornflowerblue;
+.dec-detail p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.5;
+}
+.p_top {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.detail-bottom {
+  height: calc(100% / 2);
+  background-color: cornflowerblue;
+}
+.dec-detail h3 {
+  margin-bottom: 10px;
+}
+/* acivity */
+.activity {
+  height: calc(100% / 2);
+}
+/* 하단 */
+.footer {
+  width: 100%;
+  height: 100px;
+  border-top: 2px solid #222;
 
+  padding: 20px 60px;
+  background-color: #ddd;
+}
+#bottomMenu {
+  background-color: aquamarine;
+}
+#bottomMenu ul {
+}
+#bottomMenu ul li {
+  float: left;
+  border-right: 1px solid #ddd;
+
+  background-color: rgb(105, 146, 180);
+  padding: auto;
+}
+#bottomMenu ul li:last-child {
+  border: none;
 }
